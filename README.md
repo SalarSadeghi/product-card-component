@@ -15,8 +15,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution ](https://your-solution-url.com)
-- Live Site URL: [Live site ](https://your-live-site-url.com)
+- Solution URL: [solution ](https://www.frontendmentor.io/solutions/responsive-product-card-using-flexbox-nFy18cIWLQ)
+- Live Site URL: [Live site ](https://salarsadeghi.github.io/product-card-component/)
 
 ### Built with
 
