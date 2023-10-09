@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(30, 38%, 92%);
+  color: hsl(212, 21%, 14%);
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px 15px;
+}
+
+.productImgContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.productMobileImg {
+  width: 100%;
+  height: 200px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.productDesktopImg{
+    display: none;
+}
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: hsl(0, 0%, 100%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.productName {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 4px;
+}
+
+.productTitle {
+  font-family: "Fraunces", serif;
+  margin-top: 10px;
+  line-height: 30px;
+}
+
+.productDesc {
+  color: hsl(228, 12%, 48%);
+  margin-top: 15px;
+  line-height: 22px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.productPriceContainer {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.productDiscount {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  margin-right: 20px;
+}
+
+.productPrice {
+  text-decoration: line-through;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+}
+
+.productBtn {
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 10px;
+  padding: 15px 0;
+  margin-top: 15px;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.productBtnTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 480px) {
+  .productImg {
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .container {
+    padding: 0;
+    display: flex;
+    width: 600px;
+    min-height: 60vh;
+  }
+  .productImgContainer {
+    flex: 1;
+  }
+
+  .productMobileImg {
+    display: none;
+  }
+  .productDesktopImg {
+    display: flex;
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .productInfo {
+    flex: 1;
+    border-radius: unset;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container{
+        width: 50vw;
+    }
+    .productDesktopImg {
+        width: calc(50vw / 2);
+    }
+    .productInfo {
+        display: flex;
+        justify-content: space-around;
+    }
+}
